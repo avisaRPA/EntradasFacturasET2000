@@ -1,0 +1,6 @@
+Column-0,Column-1,Column-2
+Nº Documento,Fecha de la factura,Total factura
+0054224643,21-05-2021,"647,43 EUR"
+0018938072,21-05-2021,"0,00 EUR"
+0017789444,21-05-2021,"4.255,49 EUR"
+0017789439,21-05-2021,"633,23 EUR"

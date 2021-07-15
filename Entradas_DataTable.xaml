@@ -5,10 +5,10 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1794,832</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1105,827</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="64">
+    <scg:List x:TypeArguments="x:String" Capacity="128">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -73,6 +73,7 @@
       <x:String>UiPath.Mail</x:String>
       <x:String>UiPath.Mail.Outlook.Activities</x:String>
       <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -162,7 +163,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID8</x:Reference>
+      <x:Reference>__ReferenceID7</x:Reference>
     </Flowchart.StartNode>
     <FlowStep x:Name="__ReferenceID6">
       <sap:WorkflowViewStateService.ViewState>
@@ -294,7 +295,7 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en 'INPUT  dayFrom' Desde" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_19" Text="[xHoy.AddDays(-1).Day.ToString+ &quot;[k(tab)]&quot;+xHoy.Month.ToString+ &quot;[k(tab)]&quot;+xHoy.Year.ToString+ &quot;[k(tab)][k(tab)]&quot;]">
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en 'INPUT  dayFrom' Desde" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_19" Text="[xHoy.Day.ToString+ &quot;[k(tab)]&quot;+xHoy.Month.ToString+ &quot;[k(tab)]&quot;+xHoy.Year.ToString]">
               <ui:TypeInto.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ebb68605-7197-47d5-9851-388d51958c14" InformativeScreenshot="5ef5b215416585326b9016cf2f03e762" Selector="&lt;html title='Listado de contenido de facturas' /&gt;&lt;webctrl idx='1' tag='INPUT' type='text' /&gt;">
                   <ui:Target.TimeoutMS>
@@ -375,7 +376,7 @@
                       <av:Point x:Key="ShapeLocation">153,386.5</av:Point>
                       <av:Size x:Key="ShapeSize">94,87</av:Size>
                       <av:PointCollection x:Key="TrueConnector">153,430 130,430 130,494.5 190,494.5 190,524.5</av:PointCollection>
-                      <av:PointCollection x:Key="FalseConnector">247,430 390,430 390,50 420,50</av:PointCollection>
+                      <av:PointCollection x:Key="FalseConnector">247,430 330,430 330,40 470,40</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <FlowDecision.True>
@@ -409,9 +410,9 @@
                     <FlowStep x:Name="__ReferenceID1">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">420,17</av:Point>
+                          <av:Point x:Key="ShapeLocation">470,7</av:Point>
                           <av:Size x:Key="ShapeSize">200,66</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">520,83 520,133</av:PointCollection>
+                          <av:PointCollection x:Key="ConnectorLocation">570,73 570,124.5</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <Sequence DisplayName="Extracción de facturas" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_21">
@@ -473,11 +474,11 @@
                         <FlowStep x:Name="__ReferenceID5">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <av:Point x:Key="ShapeLocation">420,133</av:Point>
+                              <av:Point x:Key="ShapeLocation">470,124.5</av:Point>
                               <av:Size x:Key="ShapeSize">200,51</av:Size>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Ámbito de aplicación de Excel" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="DataTable.xlsx">
+                          <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Ámbito de aplicación de Excel" sap:VirtualizedContainerService.HintSize="434,479" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="DataTable.xlsx">
                             <ui:ExcelApplicationScope.Body>
                               <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                                 <ActivityAction.Argument>
@@ -560,7 +561,7 @@
                                               </Assign>
                                               <ui:LookupDataTable LookupColumnName="{x:Null}" LookupDataColumn="{x:Null}" RowIndex="{x:Null}" TargetColumnName="{x:Null}" TargetDataColumn="{x:Null}" DataTable="[xDtHistorico]" DisplayName="Buscar tabla de datos" sap:VirtualizedContainerService.HintSize="484,22" sap2010:WorkflowViewState.IdRef="LookupDataTable_2" LookupColumnIndex="[0]" LookupValue="[Fila.Item(&quot;Nº Documento&quot;).ToString]" TargetColumnIndex="[3]">
                                                 <ui:LookupDataTable.CellValue>
-                                                  <OutArgument x:TypeArguments="x:String">[xNumControlxxxxxxxxxxxxxxx]</OutArgument>
+                                                  <OutArgument x:TypeArguments="x:String">[xNumControl]</OutArgument>
                                                 </ui:LookupDataTable.CellValue>
                                               </ui:LookupDataTable>
                                               <If Condition="[xNumControl&lt;&gt;&quot;&quot;]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="484,237" sap2010:WorkflowViewState.IdRef="If_23">
@@ -580,7 +581,19 @@
                                         </ActivityAction>
                                       </ui:ForEachRow.Body>
                                     </ui:ForEachRow>
-                                    <Sequence DisplayName="Sobrescribir Rango Nuevas" sap:VirtualizedContainerService.HintSize="376,450" sap2010:WorkflowViewState.IdRef="Sequence_123">
+                                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en 'editable text'" sap:VirtualizedContainerService.HintSize="602,134" sap2010:WorkflowViewState.IdRef="TypeInto_75" Text="[xNumeroFilas.ToString+&quot; entradas[k(enter)][k(enter)]&quot;]">
+                                      <ui:TypeInto.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0ae5b6eb-2a0b-490e-b58f-3ab86c142b5c" InformativeScreenshot="93199630673cd4bac479d876d6938787" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='Sin título: Bloc de notas' /&gt;&lt;wnd aaname='Horizontal' cls='Edit' /&gt;&lt;ctrl name='Editor de texto' role='editable text' /&gt;">
+                                          <ui:Target.TimeoutMS>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:Target.TimeoutMS>
+                                          <ui:Target.WaitForReady>
+                                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                                          </ui:Target.WaitForReady>
+                                        </ui:Target>
+                                      </ui:TypeInto.Target>
+                                    </ui:TypeInto>
+                                    <Sequence DisplayName="Sobrescribir Rango Nuevas" sap:VirtualizedContainerService.HintSize="602,66" sap2010:WorkflowViewState.IdRef="Sequence_123">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1019,14 +1032,14 @@
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
                                                   </ui:ExcelApplicationScope>
-                                                  <Sequence DisplayName="Entrar en DD dar entrada y finalizar" sap:VirtualizedContainerService.HintSize="242,779" sap2010:WorkflowViewState.IdRef="Sequence_111">
+                                                  <Sequence DisplayName="Entrar en DD dar entrada y finalizar" sap:VirtualizedContainerService.HintSize="376,953" sap2010:WorkflowViewState.IdRef="Sequence_111">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                         <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Abrir aplicación 'datadealer.exe  Conectar'" FileName="C:\DataDealer\datadealer.exe" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="OpenApplication_5" InformativeScreenshot="24ddfa59065d6d4a34e034b5defd09d5" Selector="&lt;wnd app='datadealer.exe' cls='ThunderRT6FormDC' title='          Conectar' /&gt;">
+                                                    <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Abrir aplicación 'datadealer.exe  Conectar'" FileName="C:\DataDealer\datadealer.exe" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="OpenApplication_5" InformativeScreenshot="24ddfa59065d6d4a34e034b5defd09d5" Selector="&lt;wnd app='datadealer.exe' cls='ThunderRT6FormDC' title='          Conectar' /&gt;">
                                                       <ui:OpenApplication.Body>
                                                         <ActivityAction x:TypeArguments="x:Object">
                                                           <ActivityAction.Argument>
@@ -1280,7 +1293,7 @@
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
                                                     </ui:OpenApplication>
-                                                    <Sequence DisplayName="DD Poner Numero Factura y tipo compra" sap:VirtualizedContainerService.HintSize="476,1989" sap2010:WorkflowViewState.IdRef="Sequence_110">
+                                                    <Sequence DisplayName="DD Poner Numero Factura y tipo compra" sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="Sequence_110">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1472,7 +1485,7 @@
                                                           </ui:Target>
                                                         </ui:TypeInto.Target>
                                                       </ui:TypeInto>
-                                                      <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Asociar ventana 'DataDeale Thunderrt'" sap:VirtualizedContainerService.HintSize="434,252" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="9bda5685ad30d7a736a7f578e9decd9b" Selector="&lt;wnd app='datadealer.exe' cls='ThunderRT6FormDC' title='DataDealer*' /&gt;">
+                                                      <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Asociar ventana -obtener numero de control" sap:VirtualizedContainerService.HintSize="434,252" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="9bda5685ad30d7a736a7f578e9decd9b" Selector="&lt;wnd app='datadealer.exe' cls='ThunderRT6FormDC' title='DataDealer*' /&gt;">
                                                         <ui:WindowScope.Body>
                                                           <ActivityAction x:TypeArguments="x:Object">
                                                             <ActivityAction.Argument>
@@ -1495,8 +1508,14 @@
                                                             </ui:GetFullText>
                                                           </ActivityAction>
                                                         </ui:WindowScope.Body>
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
                                                       </ui:WindowScope>
-                                                      <Sequence DisplayName="Guardar entrada DD" sap:VirtualizedContainerService.HintSize="434,66" sap2010:WorkflowViewState.IdRef="Sequence_109">
+                                                      <Sequence DisplayName="Guardar entrada DD" sap:VirtualizedContainerService.HintSize="376,636" sap2010:WorkflowViewState.IdRef="Sequence_109">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1604,7 +1623,7 @@
                                                         <ui:ExcelWriteRange AddHeaders="True" DataTable="[xDtFactNuevas]" DisplayName="Escribir rango" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_7" SheetName="NuevasFacturas" StartingCell="A1" />
                                                       </Sequence>
                                                     </Sequence>
-                                                    <Sequence DisplayName="Imprimir y guardar en PDF" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_115">
+                                                    <Sequence DisplayName="Guardar e imprimir en PDF" sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="Sequence_115">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1620,6 +1639,38 @@
                                                         </sap:WorkflowViewStateService.ViewState>
                                                         <If.Then>
                                                           <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'ThunderRT6CommandButton'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_89" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                            <ui:Click.CursorPosition>
+                                                              <ui:CursorPosition Position="Center">
+                                                                <ui:CursorPosition.OffsetX>
+                                                                  <InArgument x:TypeArguments="x:Int32" />
+                                                                </ui:CursorPosition.OffsetX>
+                                                                <ui:CursorPosition.OffsetY>
+                                                                  <InArgument x:TypeArguments="x:Int32" />
+                                                                </ui:CursorPosition.OffsetY>
+                                                              </ui:CursorPosition>
+                                                            </ui:Click.CursorPosition>
+                                                            <ui:Click.Target>
+                                                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="96d6e4c9-1925-460f-b704-eb2caddaa46f" InformativeScreenshot="c01c470bd3ad3b673057a8a35684f207" Selector="&lt;wnd app='datadealer.exe' cls='ThunderRT6FormDC' title='DataDealer' /&gt;&lt;wnd aaname='Aceptar' cls='ThunderRT6CommandButton' title='&amp;amp;Aceptar' /&gt;">
+                                                                <ui:Target.TimeoutMS>
+                                                                  <InArgument x:TypeArguments="x:Int32" />
+                                                                </ui:Target.TimeoutMS>
+                                                                <ui:Target.WaitForReady>
+                                                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                </ui:Target.WaitForReady>
+                                                              </ui:Target>
+                                                            </ui:Click.Target>
+                                                          </ui:Click>
+                                                        </If.Then>
+                                                      </If>
+                                                      <If Condition="[xAdvertencia]" DisplayName="Si Advertencia " sap:VirtualizedContainerService.HintSize="484,283" sap2010:WorkflowViewState.IdRef="If_30">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <If.Then>
+                                                          <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Clic 'ThunderRT6CommandButton'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_108" KeyModifiers="None" MouseButton="BTN_LEFT">
                                                             <ui:Click.CursorPosition>
                                                               <ui:CursorPosition Position="Center">
                                                                 <ui:CursorPosition.OffsetX>
@@ -1735,7 +1786,7 @@
                                                         </ui:CloseApplication.Target>
                                                       </ui:CloseApplication>
                                                     </Sequence>
-                                                    <Sequence DisplayName="Actualizar Historico" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_121">
+                                                    <Sequence DisplayName="Actualizar Historico" sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="Sequence_121">
                                                       <Sequence.Variables>
                                                         <Variable x:TypeArguments="sd:DataTable" Name="xDtCopiarHistorico" />
                                                       </Sequence.Variables>
@@ -1745,13 +1796,43 @@
                                                           <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
-                                                      <ui:FilterDataTable DataTable="[xDtFactNuevas]" DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="FilterDataTable_4" OutputDataTable="[xDtCopiarHistorico]" SelectColumnsMode="Keep">
+                                                      <ui:CommentOut DisplayName="Comentar" sap:VirtualizedContainerService.HintSize="436,229" sap2010:WorkflowViewState.IdRef="CommentOut_15">
+                                                        <ui:CommentOut.Body>
+                                                          <Sequence DisplayName="Actividades ignoradas" sap:VirtualizedContainerService.HintSize="376,151" sap2010:WorkflowViewState.IdRef="Sequence_129">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <ui:FilterDataTable DataTable="[xDtFactNuevas]" DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="FilterDataTable_4" OutputDataTable="[xDtCopiarHistorico]" SelectColumnsMode="Keep">
+                                                              <ui:FilterDataTable.Filters>
+                                                                <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                                                                  <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="NOTEMPTY">
+                                                                    <ui:FilterOperationArgument.Column>
+                                                                      <InArgument x:TypeArguments="x:String">["N.ControlEntrada"]</InArgument>
+                                                                    </ui:FilterOperationArgument.Column>
+                                                                  </ui:FilterOperationArgument>
+                                                                </scg:List>
+                                                              </ui:FilterDataTable.Filters>
+                                                              <ui:FilterDataTable.SelectColumns>
+                                                                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                                                                  <x:Null />
+                                                                </scg:List>
+                                                              </ui:FilterDataTable.SelectColumns>
+                                                            </ui:FilterDataTable>
+                                                          </Sequence>
+                                                        </ui:CommentOut.Body>
+                                                      </ui:CommentOut>
+                                                      <ui:FilterDataTable DataTable="[xDtFactNuevas]" DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="436,59" sap2010:WorkflowViewState.IdRef="FilterDataTable_10" OutputDataTable="[xDtCopiarHistorico]" SelectColumnsMode="Keep">
                                                         <ui:FilterDataTable.Filters>
                                                           <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
-                                                            <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="NOTEMPTY">
+                                                            <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
                                                               <ui:FilterOperationArgument.Column>
                                                                 <InArgument x:TypeArguments="x:String">["N.ControlEntrada"]</InArgument>
                                                               </ui:FilterOperationArgument.Column>
+                                                              <ui:FilterOperationArgument.Operand>
+                                                                <InArgument x:TypeArguments="x:String">[xNumControl]</InArgument>
+                                                              </ui:FilterOperationArgument.Operand>
                                                             </ui:FilterOperationArgument>
                                                           </scg:List>
                                                         </ui:FilterDataTable.Filters>
@@ -1761,25 +1842,54 @@
                                                           </scg:List>
                                                         </ui:FilterDataTable.SelectColumns>
                                                       </ui:FilterDataTable>
-                                                      <ui:ExcelAppendRange DataTable="[xDtCopiarHistorico]" DisplayName="Anexar rango" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelAppendRange_1" SheetName="HistóricoFacturas" />
-                                                      <ui:FilterDataTable DataTable="[xDtFactNuevas]" DisplayName="Filtrar tabla de datos Para evitar duplicados en historico" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="FilterDataTable_9" OutputDataTable="[xDtFactNuevas]" SelectColumnsMode="Keep">
-                                                        <ui:FilterDataTable.Filters>
-                                                          <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
-                                                            <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
-                                                              <ui:FilterOperationArgument.Column>
-                                                                <InArgument x:TypeArguments="x:String">["N.ControlEntrada"]</InArgument>
-                                                              </ui:FilterOperationArgument.Column>
-                                                            </ui:FilterOperationArgument>
-                                                          </scg:List>
-                                                        </ui:FilterDataTable.Filters>
-                                                        <ui:FilterDataTable.SelectColumns>
-                                                          <scg:List x:TypeArguments="InArgument" Capacity="4">
-                                                            <x:Null />
-                                                          </scg:List>
-                                                        </ui:FilterDataTable.SelectColumns>
-                                                      </ui:FilterDataTable>
+                                                      <ui:ExcelAppendRange DataTable="[xDtCopiarHistorico]" DisplayName="Anexar rango" sap:VirtualizedContainerService.HintSize="436,87" sap2010:WorkflowViewState.IdRef="ExcelAppendRange_1" SheetName="HistóricoFacturas" />
+                                                      <ui:CommentOut DisplayName="Comentar" sap:VirtualizedContainerService.HintSize="436,221" sap2010:WorkflowViewState.IdRef="CommentOut_14">
+                                                        <ui:CommentOut.Body>
+                                                          <Sequence DisplayName="Actividades ignoradas" sap:VirtualizedContainerService.HintSize="242,143" sap2010:WorkflowViewState.IdRef="Sequence_128">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <ui:FilterDataTable DataTable="[xDtFactNuevas]" DisplayName="Filtrar tabla de datos Para evitar duplicados en historico" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="FilterDataTable_9" OutputDataTable="[xDtFactNuevas]" SelectColumnsMode="Keep">
+                                                              <ui:FilterDataTable.Filters>
+                                                                <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                                                                  <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="NOTEMPTY">
+                                                                    <ui:FilterOperationArgument.Column>
+                                                                      <InArgument x:TypeArguments="x:String">["N.ControlEntrada"]</InArgument>
+                                                                    </ui:FilterOperationArgument.Column>
+                                                                  </ui:FilterOperationArgument>
+                                                                </scg:List>
+                                                              </ui:FilterDataTable.Filters>
+                                                              <ui:FilterDataTable.SelectColumns>
+                                                                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                                                                  <x:Null />
+                                                                </scg:List>
+                                                              </ui:FilterDataTable.SelectColumns>
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                            </ui:FilterDataTable>
+                                                          </Sequence>
+                                                        </ui:CommentOut.Body>
+                                                      </ui:CommentOut>
                                                     </Sequence>
-                                                    <Sequence DisplayName="Envio Correo Confirmacion" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_125">
+                                                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en 'editable text'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_76" Text="[&quot;Procesada la entrada de la factura número &quot;+Fila.Item(&quot;Nº Documento&quot;).ToString+&quot;, que es la &quot;+xContador.ToString+&quot; de &quot;+xNumeroFilas.ToString+&quot;.&quot;+&quot;[k(enter)][k(enter)]&quot;]">
+                                                      <ui:TypeInto.Target>
+                                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0ae5b6eb-2a0b-490e-b58f-3ab86c142b5c" InformativeScreenshot="93199630673cd4bac479d876d6938787" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='Sin título: Bloc de notas' /&gt;&lt;wnd aaname='Horizontal' cls='Edit' /&gt;&lt;ctrl name='Editor de texto' role='editable text' /&gt;">
+                                                          <ui:Target.TimeoutMS>
+                                                            <InArgument x:TypeArguments="x:Int32" />
+                                                          </ui:Target.TimeoutMS>
+                                                          <ui:Target.WaitForReady>
+                                                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                          </ui:Target.WaitForReady>
+                                                        </ui:Target>
+                                                      </ui:TypeInto.Target>
+                                                    </ui:TypeInto>
+                                                    <Sequence DisplayName="Envio Correo Confirmacion" sap:VirtualizedContainerService.HintSize="304,243" sap2010:WorkflowViewState.IdRef="Sequence_125">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1794,7 +1904,7 @@
                                                           <InArgument x:TypeArguments="x:Int32">[xContador+1]</InArgument>
                                                         </Assign.Value>
                                                       </Assign>
-                                                      <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;Entrada &quot;+xContador.ToString+&quot; de &quot;+xNumeroFilas.ToString]" DisplayName="Enviar mensaje de correo de Outlook" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="[xNumControl]" To="jm.ordonez@grupoavisa.net">
+                                                      <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;Entrada &quot;+xContador.ToString+&quot; de &quot;+xNumeroFilas.ToString]" DisplayName="Enviar mensaje de correo de Outlook" sap:VirtualizedContainerService.HintSize="334,145" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="[xNumControl]" To="jm.ordonez@grupoavisa.net">
                                                         <ui:SendOutlookMail.Files>
                                                           <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
                                                             <InArgument x:TypeArguments="x:String">[xCD+"\PdfEntradas\"+xNumControl+".pdf"]</InArgument>
@@ -1808,7 +1918,7 @@
                                                         </sap:WorkflowViewStateService.ViewState>
                                                       </ui:SendOutlookMail>
                                                     </Sequence>
-                                                    <Sequence DisplayName="Salir de DD" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_118">
+                                                    <Sequence DisplayName="Salir de DD" sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="Sequence_118">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1872,7 +1982,7 @@
                                                         </ui:SendHotkey.Target>
                                                       </ui:SendHotkey>
                                                     </Sequence>
-                                                    <Sequence DisplayName="Preparar lista ET2000" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_119">
+                                                    <Sequence DisplayName="Preparar lista ET2000" sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="Sequence_119">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2013,7 +2123,7 @@
     <x:Reference>__ReferenceID3</x:Reference>
     <x:Reference>__ReferenceID4</x:Reference>
     <x:Reference>__ReferenceID5</x:Reference>
-    <FlowStep x:Name="__ReferenceID8">
+    <FlowStep x:Name="__ReferenceID7">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">100,7</av:Point>
@@ -2027,18 +2137,30 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Abrir aplicación 'notepad.exe Sin'" FileName="C:\Windows\System32\notepad.exe" sap:VirtualizedContainerService.HintSize="434,229" sap2010:WorkflowViewState.IdRef="OpenApplication_2" InformativeScreenshot="4cb8ebf09acbaccb6574c6abe317eef9" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='Sin título: Bloc de notas' /&gt;">
+        <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Abrir aplicación 'notepad.exe Sin'" FileName="C:\Windows\System32\notepad.exe" sap:VirtualizedContainerService.HintSize="434,334" sap2010:WorkflowViewState.IdRef="OpenApplication_2" InformativeScreenshot="4cb8ebf09acbaccb6574c6abe317eef9" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='Sin título: Bloc de notas' /&gt;">
           <ui:OpenApplication.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="200,83" sap2010:WorkflowViewState.IdRef="Sequence_60">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,188" sap2010:WorkflowViewState.IdRef="Sequence_60">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_74" Text="Buenos días,&#xD;&#xA;A continuación, detallamos las entradas de las facturas de recambios y sus respectivos números de control, efectuadas por el robot de nuestro departamento de RPA.[k(enter)][k(enter)]">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="51db2c6a-0975-4b19-bc2b-c5f1d913ed8c">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
               </Sequence>
             </ActivityAction>
           </ui:OpenApplication.Body>
@@ -2052,222 +2174,19 @@
     <FlowStep>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">420,254.5</av:Point>
-          <av:Size x:Key="ShapeSize">200,51</av:Size>
+          <av:Point x:Key="ShapeLocation">470,217</av:Point>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Flowchart DisplayName="Diagrama de flujo" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Flowchart_3">
+      <Sequence DisplayName="End" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_130">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
-            <av:Size x:Key="ShapeSize">60,75</av:Size>
-            <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,127.5</av:PointCollection>
-            <x:Double x:Key="Width">652</x:Double>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Flowchart.StartNode>
-          <x:Reference>__ReferenceID7</x:Reference>
-        </Flowchart.StartNode>
-        <FlowStep>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">450,337</av:Point>
-              <av:Size x:Key="ShapeSize">200,66</av:Size>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Secuencia" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_84">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ui:FindText FormattedText="{x:Null}" ContinueOnError="True" DisplayName="Buscar posición de texto 'SPAN'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="FindText_3" Occurrence="1" Text="Factura Urgente NR" UiElement="[xNR]">
-              <ui:FindText.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4d4a9859-adc5-4348-b167-34f58fb6002b" InformativeScreenshot="17fa315e9d517d2dd6b857168a2570cc" Selector="&lt;html title='Ver contenido de factura' /&gt;&lt;webctrl aaname='  Factura Urgente NR (ZNRU)' tag='SPAN' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:FindText.Target>
-            </ui:FindText>
-            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ContinueOnError="True" DisplayName="Escribir en 'RichTextWndClass'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_54" Text="1N">
-              <ui:TypeInto.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="13be5124-b8d7-4303-8163-fd0fa4d63c71" InformativeScreenshot="a70ef22440b695979aee464d9a8078d5" Selector="&lt;wnd app='datadealer.exe' cls='ThunderRT6FormDC' title='DataDealer 19.5.2 (RECAMBIOS) - 192.168.17.223 - (jmordone) Entr*' /&gt;&lt;wnd cls='RichTextWndClass' idx='17' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:TypeInto.Target>
-            </ui:TypeInto>
-            <ui:FindText FormattedText="{x:Null}" ContinueOnError="True" DisplayName="Buscar posición de texto 'SPAN'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="FindText_4" Occurrence="1" Text="Factura Volumen" UiElement="[xVolumen]">
-              <ui:FindText.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6df2e7c5-26c6-4053-ac3c-1b343c73da25" InformativeScreenshot="4bb3013cb546ae05899501dbcf52ffff" Selector="&lt;html title='Ver contenido de factura' /&gt;&lt;webctrl aaname='  Factura Volumen (ZFVA)' tag='SPAN' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:FindText.Target>
-            </ui:FindText>
-            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ContinueOnError="True" DisplayName="Escribir en 'RichTextWndClass'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_55" Text="1">
-              <ui:TypeInto.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="13be5124-b8d7-4303-8163-fd0fa4d63c71" InformativeScreenshot="a70ef22440b695979aee464d9a8078d5" Selector="&lt;wnd app='datadealer.exe' cls='ThunderRT6FormDC' title='DataDealer 19.5.2 (RECAMBIOS) - 192.168.17.223 - (jmordone) Entr*' /&gt;&lt;wnd cls='RichTextWndClass' idx='17' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:TypeInto.Target>
-            </ui:TypeInto>
-            <ui:FindText FormattedText="{x:Null}" ContinueOnError="True" DisplayName="Buscar posición de texto 'SPAN'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="FindText_5" Occurrence="1" Text="Factura Urgente" UiElement="[xUrgente]">
-              <ui:FindText.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d4e343b1-1872-4349-bba6-128bc85b36c1" InformativeScreenshot="837170ce2790bf1e8beb76ec993d89b1" Selector="&lt;html title='Ver contenido de factura' /&gt;&lt;webctrl aaname='  Factura Urgente (ZFSO)' tag='SPAN' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:FindText.Target>
-            </ui:FindText>
-            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en 'RichTextWndClass'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_56" Text="3">
-              <ui:TypeInto.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="13be5124-b8d7-4303-8163-fd0fa4d63c71" InformativeScreenshot="a70ef22440b695979aee464d9a8078d5" Selector="&lt;wnd app='datadealer.exe' cls='ThunderRT6FormDC' title='DataDealer 19.5.2 (RECAMBIOS) - 192.168.17.223 - (jmordone) Entr*' /&gt;&lt;wnd cls='RichTextWndClass' idx='17' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:TypeInto.Target>
-            </ui:TypeInto>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Bandeja de mensajes" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;ok&quot;]" />
-          </Sequence>
-        </FlowStep>
-        <FlowStep x:Name="__ReferenceID7">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">200,127.5</av:Point>
-              <av:Size x:Key="ShapeSize">200,66</av:Size>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Secuencia" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_85">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="x:Boolean" Name="xVolumen" />
-            </Sequence.Variables>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ui:OCRTextExists DisplayName="Texto OCR existente 'SPAN'" sap:VirtualizedContainerService.HintSize="713,258" sap2010:WorkflowViewState.IdRef="OCRTextExists_1" Occurrence="1" Result="[xVolumen]" Text="Factura Volumen (ZFVA)">
-              <ui:OCRTextExists.OCREngine>
-                <ActivityFunc x:TypeArguments="sd1:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
-                  <ActivityFunc.Argument>
-                    <DelegateInArgument x:TypeArguments="sd1:Image" Name="Image" />
-                  </ActivityFunc.Argument>
-                  <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="300,79" sap2010:WorkflowViewState.IdRef="GoogleOCR_1" Image="[Image]" />
-                </ActivityFunc>
-              </ui:OCRTextExists.OCREngine>
-              <ui:OCRTextExists.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3c0aa6c4-738e-455e-9812-4fbc89cb244d" InformativeScreenshot="81318128ed4a0e99ef535fae2e4d2f19" Selector="&lt;html title='Ver contenido de factura' /&gt;&lt;webctrl aaname='  Factura Volumen (ZFVA)' tag='SPAN' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:OCRTextExists.Target>
-            </ui:OCRTextExists>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Bandeja de mensajes" sap:VirtualizedContainerService.HintSize="713,59" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[xVolumen]" />
-            <If Condition="[xVolumen]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="713,416" sap2010:WorkflowViewState.IdRef="If_19">
-              <If.Then>
-                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en 'RichTextWndClass'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_57" Text="1">
-                  <ui:TypeInto.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="81d06199-0e77-41d7-b534-17f36eb7355c" InformativeScreenshot="a70ef22440b695979aee464d9a8078d5" Selector="&lt;wnd app='datadealer.exe' cls='ThunderRT6FormDC' title='DataDealer 19.5.2 (RECAMBIOS) - 192.168.17.223 - (jmordone) Entr*' /&gt;&lt;wnd cls='RichTextWndClass' idx='17' /&gt;">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
-                    </ui:Target>
-                  </ui:TypeInto.Target>
-                </ui:TypeInto>
-              </If.Then>
-              <If.Else>
-                <ui:OCRTextExists DisplayName="Texto OCR existente 'SPAN'" sap:VirtualizedContainerService.HintSize="334,258" sap2010:WorkflowViewState.IdRef="OCRTextExists_2" Occurrence="1" Result="[xUrgente]" Text="Factura Urgente (ZFSO)">
-                  <ui:OCRTextExists.OCREngine>
-                    <ActivityFunc x:TypeArguments="sd1:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
-                      <ActivityFunc.Argument>
-                        <DelegateInArgument x:TypeArguments="sd1:Image" Name="Image" />
-                      </ActivityFunc.Argument>
-                      <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="300,79" sap2010:WorkflowViewState.IdRef="GoogleOCR_2" Image="[Image]" />
-                    </ActivityFunc>
-                  </ui:OCRTextExists.OCREngine>
-                  <ui:OCRTextExists.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3c0aa6c4-738e-455e-9812-4fbc89cb244d" InformativeScreenshot="01a086a0d37bddb1778329e773b439c5" Selector="&lt;html title='Ver contenido de factura' /&gt;&lt;webctrl aaname='  Factura Urgente (ZFSO)' tag='SPAN' /&gt;">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
-                    </ui:Target>
-                  </ui:OCRTextExists.Target>
-                </ui:OCRTextExists>
-              </If.Else>
-            </If>
-            <If Condition="[xUrgente]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="713,292" sap2010:WorkflowViewState.IdRef="If_22">
-              <If.Then>
-                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en 'RichTextWndClass'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_61" Text="3">
-                  <ui:TypeInto.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="81d06199-0e77-41d7-b534-17f36eb7355c" InformativeScreenshot="a70ef22440b695979aee464d9a8078d5" Selector="&lt;wnd app='datadealer.exe' cls='ThunderRT6FormDC' title='DataDealer 19.5.2 (RECAMBIOS) - 192.168.17.223 - (jmordone) Entr*' /&gt;&lt;wnd cls='RichTextWndClass' idx='17' /&gt;">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
-                    </ui:Target>
-                  </ui:TypeInto.Target>
-                </ui:TypeInto>
-              </If.Then>
-              <If.Else>
-                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en 'RichTextWndClass'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_62" Text="1N">
-                  <ui:TypeInto.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="81d06199-0e77-41d7-b534-17f36eb7355c" InformativeScreenshot="a70ef22440b695979aee464d9a8078d5" Selector="&lt;wnd app='datadealer.exe' cls='ThunderRT6FormDC' title='DataDealer 19.5.2 (RECAMBIOS) - 192.168.17.223 - (jmordone) Entr*' /&gt;&lt;wnd cls='RichTextWndClass' idx='17' /&gt;">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
-                    </ui:Target>
-                  </ui:TypeInto.Target>
-                </ui:TypeInto>
-              </If.Else>
-            </If>
-          </Sequence>
-        </FlowStep>
-      </Flowchart>
+        <ui:Delete ContinueOnError="{x:Null}" Path="{x:Null}" DisplayName="Eliminar" sap:VirtualizedContainerService.HintSize="334,79" sap2010:WorkflowViewState.IdRef="Delete_1" />
+      </Sequence>
     </FlowStep>
   </Flowchart>
 </Activity>

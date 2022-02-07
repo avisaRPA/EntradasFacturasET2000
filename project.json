@@ -1,7 +1,7 @@
 {
   "name": "0006B00ENTRADASET",
   "description": "Proceso de dar entradas de recambios de las facturas de ET2000.\r\n",
-  "main": "ENTRADASET2000.xaml",
+  "main": "Main.xaml",
   "dependencies": {
     "PDF.co.API.Activities": "[1.1.0]",
     "System.Globalization": "[4.3.0]",
@@ -47,14 +47,14 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Entradas_03403.xaml",
-      "uniqueId": "d35a7e3d-b2e3-4a82-abe0-c53d824dff41",
+      "filePath": "ENTRADASET2000.xaml",
+      "uniqueId": "9bf266a9-5e6f-48cc-bcd3-75f8e0c52538",
       "input": [],
       "output": []
     },
     {
-      "filePath": "ENTRADASET2000.xaml",
-      "uniqueId": "9bf266a9-5e6f-48cc-bcd3-75f8e0c52538",
+      "filePath": "Main.xaml",
+      "uniqueId": "32c91eb9-c5f1-4fc4-9ecb-9a43c3832377",
       "input": [],
       "output": []
     }

@@ -12,7 +12,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1208,1005</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1182,1005</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="72">
@@ -7668,7 +7668,7 @@
                                   <av:PointCollection x:Key="ConnectorLocation">490,443 490,466.5</av:PointCollection>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Sequence DisplayName="Buscar facturas" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_316">
+                              <Sequence DisplayName="Buscar facturas" sap:VirtualizedContainerService.HintSize="881,2258" sap2010:WorkflowViewState.IdRef="Sequence_316">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -7677,15 +7677,15 @@
                                 </sap:WorkflowViewStateService.ViewState>
                                 <If Condition="[x_Proveedor=&quot;27831&quot;]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="839,2166" sap2010:WorkflowViewState.IdRef="If_58">
                                   <If.Then>
-                                    <Sequence DisplayName="Buscar facturas" sap:VirtualizedContainerService.HintSize="376,1032" sap2010:WorkflowViewState.IdRef="Sequence_314">
+                                    <Sequence DisplayName="Buscar facturas" sap:VirtualizedContainerService.HintSize="376,984" sap2010:WorkflowViewState.IdRef="Sequence_314">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Listado contenido facturas" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="ClickImage_12" KeyModifiers="None" MouseButton="BTN_LEFT">
-                                        <ui:ClickImage.CursorPosition>
+                                      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'A '" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_273" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                        <ui:Click.CursorPosition>
                                           <ui:CursorPosition Position="Center">
                                             <ui:CursorPosition.OffsetX>
                                               <InArgument x:TypeArguments="x:Int32" />
@@ -7694,12 +7694,9 @@
                                               <InArgument x:TypeArguments="x:Int32" />
                                             </ui:CursorPosition.OffsetY>
                                           </ui:CursorPosition>
-                                        </ui:ClickImage.CursorPosition>
-                                        <ui:ClickImage.Image>
-                                          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKAAAAAPCAYAAABjhcQWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK2SURBVGhD7ZdLbgIxEAVz/xuwZs2WLWsOwBE4x0QVUeLR8gzzQYwiuSRr7Hb/nu0kys/Q6exIf4CdXekPsLMr/QF2dqU/wM6uNB/g7XYbDofDY/XkfD7/jTGu1+vkfuVyuQyn0+mxWgZxxH8TtKFxKcQcj8fH6skW/e/uokId7nRJDKzVPJdFD/AdSw/lvz1AHtEnL+ObD5D75F6X8mnNldW/AWkMHwYNMnJtjrRB+pHLC7jf7y/+LfBnj9r5ADPn2IUay7AX0MagB23kSXvGs27VVEPGAr7+BtyiH70Zy4B3+vOuqhaGZN/cX9WsHayfmtVoDKPVo36w6gHmgaav+4CP5E86vu6RQztzHxQ56kFaB8GKxt+5EGseyR5zTg37JSYP0Bzpwz69j9XUnvqw53nV/bn6zU3/wBy/OfohY60Pasoec+4+ZA7qZH19/EKedeZBmz2ueoAWZaRY98U8DIrWvMRiNx9fwM8DEH1FEYiyhiP9AL/sS/ClFuRFpj01eYhjNauO7JHYLfrNIfY1Rz9gVxMQqz85WNNPRc2QOaxfexdzMyDrJZv+CbF4FnGfQ/DAPOiaF2FzL8AcQp283Cnwy76Fmh6oPUDaU5OXMVaz6qDf7HGL/lpTTWO9VNRkLeKBWHJ4nhX3wRzgudTeyeG66gVisv7qP8F8IRtwH7Jx5j4efLVj046PTZFDu9iTQhVhfQ+GOHuQ1JP9pi+56AEyX0vTWM3MrZ28xGTuNfprTfyz5pR+0IfBHJzTT/aYPmoGfaHWVzM26/PNPC2fyQeYwyADEeqeB8eXNU06d80XMndegEIYHkQlcxJnXfNPxdK3PsaBNoYwp09oaabXVs16GfaIrz5b9GdN4uxrjn721IRP5qj6GORMG/3l+RtXNac++8KWdoY0H2Cn8y36A+zsyDD8AqVEGQTd4Oc6AAAAAElFTkSuQmCC" />
-                                        </ui:ClickImage.Image>
-                                        <ui:ClickImage.Target>
-                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a5feb581-966a-49c4-aa33-4e2ba6f30f6b" Selector="&lt;html title='Bienvenidos a la Web de VAESA' /&gt;">
+                                        </ui:Click.CursorPosition>
+                                        <ui:Click.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dcaba462-da80-41e7-b53e-53c6ae0a2863" InformativeScreenshot="18444c7e473dfd9f2ff88b285118039d" Selector="&lt;html title='Bienvenidos a la Web de VAESA' /&gt;&lt;webctrl aaname='Listado de contenido de facturas ' parentid='divInformacion' tag='A' /&gt;">
                                             <ui:Target.TimeoutMS>
                                               <InArgument x:TypeArguments="x:Int32" />
                                             </ui:Target.TimeoutMS>
@@ -7707,8 +7704,8 @@
                                               <InArgument x:TypeArguments="ui:WaitForReady" />
                                             </ui:Target.WaitForReady>
                                           </ui:Target>
-                                        </ui:ClickImage.Target>
-                                      </ui:ClickImage>
+                                        </ui:Click.Target>
+                                      </ui:Click>
                                       <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOUBLE" DisplayName="Doble clic" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_249" KeyModifiers="None" MouseButton="BTN_LEFT">
                                         <ui:Click.CursorPosition>
                                           <ui:CursorPosition Position="Center">
@@ -7820,7 +7817,7 @@
                                             </ui:CursorPosition>
                                           </ui:Click.CursorPosition>
                                           <ui:Click.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5e2fc693-8bbf-4c40-9ecf-82d66eda4c21" InformativeScreenshot="b372cbeb8c1d5113952a96305e615900" Selector="&lt;html title='Bienvenidos a la Web de Seat' /&gt;&lt;webctrl aaname='Listado de contenido de facturas' omit:parentid='divInformacion' tag='A' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5e2fc693-8bbf-4c40-9ecf-82d66eda4c21" InformativeScreenshot="b372cbeb8c1d5113952a96305e615900" Selector="&lt;html title='Bienvenidos a la Web de Seat' /&gt;&lt;webctrl aaname='Listado de contenido de facturas ' parentid='divInformacion' tag='A' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>

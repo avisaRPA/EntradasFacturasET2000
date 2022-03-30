@@ -92,7 +92,7 @@
           <av:Size x:Key="ShapeSize">200,66</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Secuencia " sap:VirtualizedContainerService.HintSize="476,815" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence DisplayName="Secuencia " sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_2">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -177,6 +177,12 @@
                     </InArgument>
                     <InArgument x:TypeArguments="x:String" x:Key="x_FicheroRecep">
                       <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Fila.Item(&quot;FicheroRecep&quot;).ToString" />
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="x_Facturas">
+                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Fila.Item(&quot;Facturas&quot;).ToString" />
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="x_CC">
+                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Fila.Item(&quot;C.C.&quot;).ToString" />
                     </InArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>

@@ -15,7 +15,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1194,1005</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1086,1005</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="72">
@@ -558,7 +558,7 @@
                             </ui:ExcelWriteRange>
                           </Sequence>
                         </Sequence>
-                        <Sequence DisplayName="Procesar nuevas facturas" sap:VirtualizedContainerService.HintSize="242,143" sap2010:WorkflowViewState.IdRef="Sequence_114">
+                        <Sequence DisplayName="Procesar nuevas facturas" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_114">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -587,7 +587,7 @@
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <Sequence DisplayName="Busqueda factura" sap:VirtualizedContainerService.HintSize="436,66" sap2010:WorkflowViewState.IdRef="Sequence_100">
+                                        <Sequence DisplayName="Busqueda factura" sap:VirtualizedContainerService.HintSize="478,1000" sap2010:WorkflowViewState.IdRef="Sequence_100">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -715,7 +715,7 @@
                                             </ui:Click>
                                             <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="5000" DelayMS="2000" DisplayName="Escribir en 'Edit'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_144" Text="[&quot;C:\Users\SSCC\Documents\UiPath\EntradasFacturasET2000\PdfEntradas\&quot; + xNumeroFacturaEntrada + &quot;.pdf&quot;]">
                                               <ui:TypeInto.Target>
-                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="267b44cb-8b2b-42ec-a8ea-3af2cf3ae413" InformativeScreenshot="08f6b00dff74c4d9c967d150ae5262ff" Selector="&lt;wnd app='splwow64.exe' cls='#32770' title='Guardar impresión como' /&gt;&lt;wnd aaname='Panel del explorador' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Nombre:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;">
+                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="267b44cb-8b2b-42ec-a8ea-3af2cf3ae413" InformativeScreenshot="08f6b00dff74c4d9c967d150ae5262ff" Selector="&lt;wnd app='*.exe' cls='#32770' /&gt;&lt;wnd aaname='Panel del explorador' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Nombre:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;">
                                                   <ui:Target.TimeoutMS>
                                                     <InArgument x:TypeArguments="x:Int32" />
                                                   </ui:Target.TimeoutMS>
@@ -999,7 +999,7 @@
                                             </Sequence>
                                           </ui:CommentOut.Body>
                                         </ui:CommentOut>
-                                        <Sequence DisplayName="Entrar en DD dar entrada y finalizar" sap:VirtualizedContainerService.HintSize="242,249" sap2010:WorkflowViewState.IdRef="Sequence_111">
+                                        <Sequence DisplayName="Entrar en DD dar entrada y finalizar" sap:VirtualizedContainerService.HintSize="436,66" sap2010:WorkflowViewState.IdRef="Sequence_111">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2534,7 +2534,7 @@
                                                     <ui:ExcelDeleteRange DisplayName="Eliminar rango" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="ExcelDeleteRange_10" Range="A1:D10000" SheetName="NuevasFacturas" ShiftCells="False" ShiftOption="ShiftUp" />
                                                     <ui:ExcelWriteRange AddHeaders="True" DataTable="[xDtFactNuevas]" DisplayName="Escribir rango" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_10" SheetName="NuevasFacturas" StartingCell="A1" />
                                                   </Sequence>
-                                                  <Sequence DisplayName="Guardar e imprimir en PDF" sap:VirtualizedContainerService.HintSize="526,2072" sap2010:WorkflowViewState.IdRef="Sequence_241">
+                                                  <Sequence DisplayName="Guardar e imprimir en PDF" sap:VirtualizedContainerService.HintSize="434,66" sap2010:WorkflowViewState.IdRef="Sequence_241">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2840,7 +2840,7 @@
                                                   </Assign>
                                                   <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en 'editable text'" sap:VirtualizedContainerService.HintSize="434,134" sap2010:WorkflowViewState.IdRef="TypeInto_115" Text="[&quot;Procesada la entrada de la factura número &quot;+Fila.Item(&quot;Nº Documento&quot;).ToString+&quot;, que es la &quot;+xContador.ToString+&quot; de &quot;+xNumeroFilas.ToString+&quot;. &quot;+&quot;Precio ET2000 &quot;+xPrecioET.ToString+&quot;€&quot;+&quot; - &quot;+&quot;Precio DD &quot;+xPrecioDD.ToString+&quot;€&quot;+&quot; = &quot;+xRecargo.ToString+&quot;€&quot;+&quot; de recargo. &quot;+ &quot;Recargo final &quot; + xRecargo2.ToString+&quot;€.&quot;+&quot;[k(enter)][k(enter)]&quot;]">
                                                     <ui:TypeInto.Target>
-                                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0ae5b6eb-2a0b-490e-b58f-3ab86c142b5c" InformativeScreenshot="93199630673cd4bac479d876d6938787" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='*' /&gt;&lt;wnd aaname='Horizontal' cls='Edit' /&gt;&lt;ctrl name='Editor de texto' role='editable text' /&gt;">
+                                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0ae5b6eb-2a0b-490e-b58f-3ab86c142b5c" InformativeScreenshot="93199630673cd4bac479d876d6938787" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='*Sin título: Bloc de notas' /&gt;">
                                                         <ui:Target.TimeoutMS>
                                                           <InArgument x:TypeArguments="x:Int32" />
                                                         </ui:Target.TimeoutMS>
@@ -3262,7 +3262,7 @@
                             <ui:ExcelWriteRange AddHeaders="True" DataTable="[xDtFactNuevas]" DisplayName="Escribir rango" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_13" SheetName="NuevasFacturas" StartingCell="[Nothing]" />
                           </Sequence>
                         </Sequence>
-                        <Sequence DisplayName="Procesar nuevas facturas" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_309">
+                        <Sequence DisplayName="Procesar nuevas facturas" sap:VirtualizedContainerService.HintSize="242,143" sap2010:WorkflowViewState.IdRef="Sequence_309">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -3291,7 +3291,7 @@
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <Sequence DisplayName="Busqueda factura" sap:VirtualizedContainerService.HintSize="436,66" sap2010:WorkflowViewState.IdRef="Sequence_274">
+                                        <Sequence DisplayName="Busqueda factura" sap:VirtualizedContainerService.HintSize="478,1000" sap2010:WorkflowViewState.IdRef="Sequence_274">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -3411,7 +3411,7 @@
                                             </ui:Click>
                                             <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="5000" DelayMS="2000" DisplayName="Escribir en 'Edit'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_148" Text="[&quot;C:\Users\SSCC\Documents\UiPath\EntradasFacturasET2000\PdfEntradas\&quot; + xNumeroFacturaEntrada + &quot;.pdf&quot;]">
                                               <ui:TypeInto.Target>
-                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="267b44cb-8b2b-42ec-a8ea-3af2cf3ae413" InformativeScreenshot="08f6b00dff74c4d9c967d150ae5262ff" Selector="&lt;wnd app='splwow64.exe' cls='#32770' title='Guardar impresión como' /&gt;&lt;wnd aaname='Panel del explorador' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Nombre:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;">
+                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="267b44cb-8b2b-42ec-a8ea-3af2cf3ae413" InformativeScreenshot="08f6b00dff74c4d9c967d150ae5262ff" Selector="&lt;wnd app='*.exe' cls='#32770' /&gt;&lt;wnd aaname='Panel del explorador' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Nombre:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;">
                                                   <ui:Target.TimeoutMS>
                                                     <InArgument x:TypeArguments="x:Int32" />
                                                   </ui:Target.TimeoutMS>
@@ -3695,7 +3695,7 @@
                                             </Sequence>
                                           </ui:CommentOut.Body>
                                         </ui:CommentOut>
-                                        <Sequence DisplayName="Entrar en DD dar entrada y finalizar" sap:VirtualizedContainerService.HintSize="376,1053" sap2010:WorkflowViewState.IdRef="Sequence_306">
+                                        <Sequence DisplayName="Entrar en DD dar entrada y finalizar" sap:VirtualizedContainerService.HintSize="436,66" sap2010:WorkflowViewState.IdRef="Sequence_306">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -4981,7 +4981,7 @@
                                               <ui:ExcelWriteRange AddHeaders="True" DataTable="[xDtFactNuevas]" DisplayName="Escribir rango" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_15" SheetName="NuevasFacturas" StartingCell="A1" />
                                             </Sequence>
                                           </Sequence>
-                                          <Sequence DisplayName="Guardar e imprimir en PDF" sap:VirtualizedContainerService.HintSize="526,2072" sap2010:WorkflowViewState.IdRef="Sequence_299">
+                                          <Sequence DisplayName="Guardar e imprimir en PDF" sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="Sequence_299">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -5284,7 +5284,7 @@
                                           </Assign>
                                           <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en 'editable text'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_133" Text="[&quot;Procesada la entrada de la factura número &quot;+Fila.Item(&quot;Nº Documento&quot;).ToString+&quot;, que es la &quot;+xContador.ToString+&quot; de &quot;+xNumeroFilas.ToString+&quot;. &quot;+&quot;Precio ET2000 &quot;+xPrecioET.ToString+&quot;€&quot;+&quot; - &quot;+&quot;Precio DD &quot;+xPrecioDD.ToString+&quot;€&quot;+&quot; = &quot;+xRecargo.ToString+&quot;€&quot;+&quot; de recargo. &quot;+ &quot;Recargo final &quot; + xRecargo2.ToString+&quot;€.&quot;+&quot;[k(enter)][k(enter)]&quot;]">
                                             <ui:TypeInto.Target>
-                                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0ae5b6eb-2a0b-490e-b58f-3ab86c142b5c" InformativeScreenshot="93199630673cd4bac479d876d6938787" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='*' /&gt;&lt;wnd aaname='Horizontal' cls='Edit' /&gt;&lt;ctrl name='Editor de texto' role='editable text' /&gt;">
+                                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0ae5b6eb-2a0b-490e-b58f-3ab86c142b5c" InformativeScreenshot="93199630673cd4bac479d876d6938787" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='*Sin título: Bloc de notas' /&gt;">
                                                 <ui:Target.TimeoutMS>
                                                   <InArgument x:TypeArguments="x:Int32" />
                                                 </ui:Target.TimeoutMS>
@@ -6152,7 +6152,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <upap:JoinPDF DisplayName="Unir archivos PDF" FileList="[xPDFAdjuntos]" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="JoinPDF_1" OutputFileName="[xCD+&quot;\PdfSalidas\Albaranes de entradas.pdf&quot;]" />
-                            <Sequence DisplayName="Extracción de pantalla" sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="Sequence_135">
+                            <Sequence DisplayName="Extracción de pantalla" sap:VirtualizedContainerService.HintSize="476,436" sap2010:WorkflowViewState.IdRef="Sequence_135">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -6173,7 +6173,7 @@
                                       </sap:WorkflowViewStateService.ViewState>
                                       <ui:GetVisibleText WordsInfo="{x:Null}" DisplayName="Get Visible Text 'editable text'" FormattedText="False" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetVisibleText_1">
                                         <ui:GetVisibleText.Target>
-                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a06f1497-2807-4263-b523-fbdd088f7fea" InformativeScreenshot="9c0f70fab118740e7c0aef1136e7952f" Selector="&lt;wnd aaname='Horizontal' cls='Edit' /&gt;&lt;ctrl name='Editor de texto' role='editable text' /&gt;">
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a06f1497-2807-4263-b523-fbdd088f7fea" InformativeScreenshot="9c0f70fab118740e7c0aef1136e7952f" Selector="&lt;wnd cls='Edit' /&gt;&lt;ctrl name='Editor de texto' role='editable text' /&gt;">
                                             <ui:Target.TimeoutMS>
                                               <InArgument x:TypeArguments="x:Int32" />
                                             </ui:Target.TimeoutMS>
@@ -6503,7 +6503,7 @@
                 <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximizar ventana" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_6" />
                 <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_74" Text="Buenos días,&#xA;A continuación, detallamos las entradas de las facturas de recambios y sus respectivos números de control,&#xA;efectuadas por el robot de nuestro departamento de RPA.[k(enter)][k(enter)]">
                   <ui:TypeInto.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="51db2c6a-0975-4b19-bc2b-c5f1d913ed8c">
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="51db2c6a-0975-4b19-bc2b-c5f1d913ed8c" Selector="&lt;wnd cls='Edit' /&gt;&lt;ctrl name='Editor de texto' role='editable text' /&gt;">
                       <ui:Target.TimeoutMS>
                         <InArgument x:TypeArguments="x:Int32" />
                       </ui:Target.TimeoutMS>
@@ -6616,7 +6616,7 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <FlowDecision.True>
-            <FlowStep x:Name="__ReferenceID12" sap2010:WorkflowViewState.IdRef="FlowStep_14">
+            <FlowStep x:Name="__ReferenceID11" sap2010:WorkflowViewState.IdRef="FlowStep_14">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">10,467</av:Point>
@@ -7055,7 +7055,7 @@
                     </FlowStep>
                   </FlowDecision.True>
                   <FlowDecision.False>
-                    <FlowStep x:Name="__ReferenceID6" sap2010:WorkflowViewState.IdRef="FlowStep_13">
+                    <FlowStep x:Name="__ReferenceID12" sap2010:WorkflowViewState.IdRef="FlowStep_13">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">390,100</av:Point>
@@ -7177,7 +7177,7 @@
                         </ui:SendHotkey>
                       </Sequence>
                       <FlowStep.Next>
-                        <FlowStep x:Name="__ReferenceID11" sap2010:WorkflowViewState.IdRef="FlowStep_12">
+                        <FlowStep x:Name="__ReferenceID6" sap2010:WorkflowViewState.IdRef="FlowStep_12">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <av:Point x:Key="ShapeLocation">390,197</av:Point>
@@ -8077,7 +8077,7 @@
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   <av:Point x:Key="ShapeLocation">613,20</av:Point>
                   <av:Size x:Key="ShapeSize">120,87</av:Size>
-                  <av:PointCollection x:Key="TrueConnector">613,63.5 490,63.5 490,100</av:PointCollection>
+                  <av:PointCollection x:Key="TrueConnector">613,63.5 613,230 590,230</av:PointCollection>
                   <av:PointCollection x:Key="FalseConnector">733,63.5 760,63.5 760,246.5 670,246.5 670,276.5</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -8102,9 +8102,9 @@
     </FlowStep>
     <x:Reference>__ReferenceID9</x:Reference>
     <x:Reference>__ReferenceID10</x:Reference>
+    <x:Reference>__ReferenceID6</x:Reference>
     <x:Reference>__ReferenceID11</x:Reference>
     <x:Reference>__ReferenceID12</x:Reference>
-    <x:Reference>__ReferenceID6</x:Reference>
     <x:Reference>__ReferenceID13</x:Reference>
     <x:Reference>__ReferenceID14</x:Reference>
     <x:Reference>__ReferenceID15</x:Reference>

@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Pruebas" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Pruebas" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="x_Proveedor" Type="InArgument(x:String)" />
     <x:Property Name="x_CodAlma" Type="InArgument(x:String)" />
@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1134,827</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1147,827</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Pruebas_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="62">
@@ -105,48 +105,97 @@
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>BouncyCastle.Crypto</AssemblyReference>
       <AssemblyReference>PDF.co.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Procesar entradas" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_244">
-    <Sequence.Variables>
-      <Variable x:TypeArguments="sd:DataTable" Name="xDtFactNuevas" />
-      <Variable x:TypeArguments="sd:DataTable" Name="xDtHistorico" />
-      <Variable x:TypeArguments="x:String" Name="xNumControl" />
-      <Variable x:TypeArguments="x:Int32" Name="xNumeroFilas" />
-      <Variable x:TypeArguments="x:String" Name="xNumeroFacturaEntrada" />
-      <Variable x:TypeArguments="x:Boolean" Name="xAdvertencia2" />
-      <Variable x:TypeArguments="x:Boolean" Name="xAdvertencia" />
-      <Variable x:TypeArguments="x:String" Name="xTipoPedido" />
-      <Variable x:TypeArguments="x:String" Name="xPrecioDD" />
-      <Variable x:TypeArguments="x:String" Name="xPrecioET" />
-      <Variable x:TypeArguments="ui:GenericValue" Name="xRecargo" />
-      <Variable x:TypeArguments="ui:GenericValue" Name="xRecargo2" />
-      <Variable x:TypeArguments="x:String" Default="C:\Users\SSCC\Documents\UiPath\EntradasFacturasET2000" Name="xCD" />
-      <Variable x:TypeArguments="x:Int32" Name="xContador" />
-    </Sequence.Variables>
+  <Sequence DisplayName="Secuencia" sap:VirtualizedContainerService.HintSize="610,382" sap2010:WorkflowViewState.IdRef="Sequence_247">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-        <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'chrome.exe ¿Quieres'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_156" KeyModifiers="None" MouseButton="BTN_LEFT">
-      <ui:Click.CursorPosition>
-        <ui:CursorPosition OffsetX="0" OffsetY="0" Position="TopLeft" />
-      </ui:Click.CursorPosition>
-      <ui:Click.Target>
-        <ui:Target Element="{x:Null}" Id="28f7d964-9c52-4797-89a2-61fd20251efb" InformativeScreenshot="7371d9441636b76df7a068695b9c94e1" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='¿Quieres restaurar las páginas?' /&gt;">
-          <ui:Target.ClippingRegion>
-            <ui:Region Rectangle="302, 9, 16, 22" />
-          </ui:Target.ClippingRegion>
-          <ui:Target.TimeoutMS>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:Target.TimeoutMS>
-          <ui:Target.WaitForReady>
-            <InArgument x:TypeArguments="ui:WaitForReady" />
-          </ui:Target.WaitForReady>
-        </ui:Target>
-      </ui:Click.Target>
-    </ui:Click>
+    <ui:CommentOut DisplayName="Comentar" sap:VirtualizedContainerService.HintSize="548,271" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Actividades ignoradas" sap:VirtualizedContainerService.HintSize="512,192" sap2010:WorkflowViewState.IdRef="Sequence_246">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Procesar entradas" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_244">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd1:DataTable" Name="xDtFactNuevas" />
+              <Variable x:TypeArguments="sd1:DataTable" Name="xDtHistorico" />
+              <Variable x:TypeArguments="x:String" Name="xNumControl" />
+              <Variable x:TypeArguments="x:Int32" Name="xNumeroFilas" />
+              <Variable x:TypeArguments="x:String" Name="xNumeroFacturaEntrada" />
+              <Variable x:TypeArguments="x:Boolean" Name="xAdvertencia2" />
+              <Variable x:TypeArguments="x:Boolean" Name="xAdvertencia" />
+              <Variable x:TypeArguments="x:String" Name="xTipoPedido" />
+              <Variable x:TypeArguments="x:String" Name="xPrecioDD" />
+              <Variable x:TypeArguments="x:String" Name="xPrecioET" />
+              <Variable x:TypeArguments="ui:GenericValue" Name="xRecargo" />
+              <Variable x:TypeArguments="ui:GenericValue" Name="xRecargo2" />
+              <Variable x:TypeArguments="x:String" Default="C:\Users\SSCC\Documents\UiPath\EntradasFacturasET2000" Name="xCD" />
+              <Variable x:TypeArguments="x:Int32" Name="xContador" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:GetOCRText Text="{x:Null}" WordsInfo="{x:Null}" DisplayName="Obtener texto OCR 'SPAN'" sap:VirtualizedContainerService.HintSize="434,227" sap2010:WorkflowViewState.IdRef="GetOCRText_1">
+              <ui:GetOCRText.OCREngine>
+                <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                  <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="284,80" sap2010:WorkflowViewState.IdRef="GoogleOCR_1" Image="[Image]" Text="[xTipoPedido]" />
+                </ActivityFunc>
+              </ui:GetOCRText.OCREngine>
+              <ui:GetOCRText.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="323cb806-cdd4-4d46-aa17-d48f9499a03e" InformativeScreenshot="f45fc99631be0b2db337362c50c6a092" Selector="&lt;html app='msedge.exe' title='Ver contenido de factura' /&gt;&lt;webctrl aaname='  *' tag='SPAN' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:GetOCRText.Target>
+            </ui:GetOCRText>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Bandeja de mensajes" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[xTipoPedido]" />
+            <Assign DisplayName="Asignar Quitar parentesis final" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[xTipoPedido]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[Split(xTipoPedido,"J")(0).ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Bandeja de mensajes" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[xTipoPedido]" />
+            <ui:WriteTextFile DisplayName="Escribir archivo de texto" FileName="Sin título - copia.txt" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[xTipoPedido]" />
+            <Assign DisplayName="Asignar Quitar parentesis inicial y resto" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[xTipoPedido]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[Split(xTipoPedido,"n")(1).ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign DisplayName="Asignar Quitar parentesis inicial y resto" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[xTipoPedido]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[Split(xTipoPedido,"l")(1).ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Bandeja de mensajes" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[xTipoPedido]" />
+          </Sequence>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
   </Sequence>
 </Activity>
